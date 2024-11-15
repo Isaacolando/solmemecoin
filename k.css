@@ -1,0 +1,315 @@
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #FF5733, #33FF57, #5733FF);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero .logo img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #FF5733;
+}
+
+.btn-primary:hover {
+    background-color: #C70039;
+}
+
+.btn-secondary {
+    background-color: #5733FF;
+}
+
+.btn-secondary:hover {
+    background-color: #900C3F;
+}
+
+/* Tokenomics Section */
+.tokenomics {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.tokenomics h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tokenomics p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.tokenomics-chart {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chart-section {
+    flex-grow: 1;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Telegram Bot Links Styling 
+.telegram-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.btn-telegram {
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-telegram:hover {
+    background-color: #005f99;
+} */
+
+/* Social Media Section Styling */
+.social-media {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.social-media p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Button Styles for Social Media */
+.btn-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+/* Telegram Button */
+.btn-social.telegram {
+    background-color: #0088cc; /* Telegram blue */
+}
+
+.btn-social.telegram:hover {
+    background-color: #99007a;
+}
+
+/* Twitter Button */
+.btn-social.twitter {
+    background-color: #1DA1F2; /* Twitter blue */
+}
+
+.btn-social.twitter:hover {
+    background-color: #0077b5;
+}
+
+/* Icon Styling */
+.btn-social img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    /* Reduce font sizes for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Tokenomics Section */
+    .tokenomics h2 {
+        font-size: 2rem;
+    }
+
+    .tokenomics-chart {
+        flex-direction: column;
+    }
+
+    .chart-section {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Social Media Links */
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-social {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Smaller Mobile Styles (like phones) */
+@media (max-width: 480px) {
+    /* Further reduce font sizes */
+    body {
+        font-size: 12px;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    /* Footer Links and Social Buttons */
+    footer {
+        padding: 15px;
+    }
+}
+ /*Header Styling 
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
+    z-index: 1000; 
+   
+}
+*/
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Logo/Icon Styling */
+.logo-icon {
+    width: 50px; /* Adjust size */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 40px; /* Smaller size for mobile */
+    }
+}
